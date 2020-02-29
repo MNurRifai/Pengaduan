@@ -12,11 +12,9 @@ class MasyarakatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('level:admin');
-    //     $this->middleware('auth');
-    // }
+    public function __construct(){
+        $this->middleware('auth:admin');
+    }
     
     public function index()
     {
